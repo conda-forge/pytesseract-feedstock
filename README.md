@@ -124,4 +124,4 @@ Feedstock Maintainers
 
 * [@adbeda](https://github.com/adbeda/)
 * [@agcopenhaver](https://github.com/agcopenhaver/)
-
+* [@int3l](https://github.com/int3l/)
