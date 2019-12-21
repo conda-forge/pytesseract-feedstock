@@ -1,12 +1,12 @@
 {% set name = "pytesseract" %}
-{% set version = "0.3.0" %}
+{% set version = "0.3.1" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 source:
   url: https://github.com/madmaze/{{ name }}/archive/v{{ version }}.tar.gz
-  sha256: 9c8b8c463512c7907fc0cf961e35063f66f9214bba0dc556d1f44376f26a1225
+  sha256: e0b4ac61dd04d2617151f11c12aa95696a78411e0b94af4fb35f908b85aa989d
 
 build:
   noarch: python
@@ -38,8 +38,8 @@ test:
 
 about:
   home: https://github.com/madmaze/pytesseract
-  license: GPL-3.0
-  license_family: GPL
+  license: Apache-2.0
+  license_family: Apache
   license_file: LICENSE
   summary: 'Python-tesseract is an optical character recognition (OCR) tool for python.'
 
