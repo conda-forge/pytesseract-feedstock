@@ -1,17 +1,17 @@
 {% set name = "pytesseract" %}
-{% set version = "0.3.2" %}
+{% set version = "0.3.3" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 source:
   url: https://github.com/madmaze/{{ name }}/archive/v{{ version }}.tar.gz
-  sha256: 892237ba345e391c55439536bb13efb8204f5d6f4b5688bf7d94583193cdd28b
+  sha256: 62e810f1a3eb28ab88e95de17d8f4f7e6681e47c5a11e0c412ec26e36bc647ef
 
 build:
   noarch: python
   number: 0
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
   entry_points:
     - pytesseract = pytesseract.pytesseract:main
 
@@ -41,15 +41,15 @@ about:
   license: Apache-2.0
   license_family: Apache
   license_file: LICENSE
-  summary: 'Python-tesseract is an optical character recognition (OCR) tool for python.'
+  summary: Python-tesseract is an optical character recognition (OCR) tool for python.
 
   description: |
-   Python-tesseract is a wrapper for Google's Tesseract-OCR Engine.
-   It is also useful as a stand-alone invocation script to tesseract,
-   as it can read all image types supported by the Pillow and Leptonica
-   imaging libraries, including jpeg, png, gif, bmp, tiff, and others.
-   Additionally, if used as a script, Python-tesseract will print the
-   recognized text instead of writing it to a file
+    Python-tesseract is a wrapper for Google's Tesseract-OCR Engine.
+    It is also useful as a stand-alone invocation script to tesseract,
+    as it can read all image types supported by the Pillow and Leptonica
+    imaging libraries, including jpeg, png, gif, bmp, tiff, and others.
+    Additionally, if used as a script, Python-tesseract will print the
+    recognized text instead of writing it to a file
 
 
 extra:
