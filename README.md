@@ -5,7 +5,7 @@ Home: https://github.com/madmaze/pytesseract
 
 Package license: Apache-2.0
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: Python-tesseract is an optical character recognition (OCR) tool for python.
 
