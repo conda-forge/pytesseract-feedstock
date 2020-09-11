@@ -1,12 +1,12 @@
 {% set name = "pytesseract" %}
-{% set version = "0.3.5" %}
+{% set version = "0.3.6" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 source:
   url: https://github.com/madmaze/{{ name }}/archive/v{{ version }}.tar.gz
-  sha256: 155dee89cae8de07dffe94d3ad96bbdbb6a486943fb283c169f5f35c9d4963b0
+  sha256: b77403401b2c75aa9b58c2f59b458b448b69ba7bcedb7e029316e420ed57e4d2
 
 build:
   noarch: python
