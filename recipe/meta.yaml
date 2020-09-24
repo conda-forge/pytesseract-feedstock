@@ -4,9 +4,12 @@
 package:
   name: {{ name|lower }}
   version: {{ version }}
+
+
 source:
   url: https://github.com/madmaze/{{ name }}/archive/v{{ version }}.tar.gz
   sha256: f6d842c572d15f6b2950156e0f3e6f3666810b887a44de2add0895501c663fc3
+
 
 build:
   noarch: python
@@ -15,21 +18,24 @@ build:
   entry_points:
     - pytesseract = pytesseract.pytesseract:main
 
+
 requirements:
   build:
     - python
     - pip
 
-
   run:
     - python
+    - pillow
+
+
+test:
+  requires:
     - flake8
     - pep8-naming
     - flake8-quotes
     - pytest
-    - pillow
 
-test:
   imports:
     - PIL
     - PIL.Image
