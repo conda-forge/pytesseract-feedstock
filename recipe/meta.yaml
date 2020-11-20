@@ -1,5 +1,5 @@
 {% set name = "pytesseract" %}
-{% set version = "0.3.6" %}
+{% set version = "0.3.7" %}
 
 package:
   name: {{ name|lower }}
@@ -8,19 +8,19 @@ package:
 
 source:
   url: https://github.com/madmaze/{{ name }}/archive/v{{ version }}.tar.gz
-  sha256: f6d842c572d15f6b2950156e0f3e6f3666810b887a44de2add0895501c663fc3
+  sha256: bd68fb3f6d18e374be49a35d9fec8b0cd1243ecfdb454ae79f8670063b205464
 
 
 build:
   noarch: python
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . -vv
   entry_points:
     - pytesseract = pytesseract.pytesseract:main
 
 
 requirements:
-  build:
+  host:
     - python
     - pip
 
