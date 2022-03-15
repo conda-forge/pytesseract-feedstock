@@ -5,7 +5,7 @@ Home: https://github.com/madmaze/pytesseract
 
 Package license: Apache-2.0
 
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pytesseract-feedstock/blob/master/LICENSE.txt)
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pytesseract-feedstock/blob/main/LICENSE.txt)
 
 Summary: Python-tesseract is an optical character recognition (OCR) tool for python.
 
@@ -23,8 +23,8 @@ Current build status
 
 <table><tr><td>All platforms:</td>
     <td>
-      <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=7083&branchName=master">
-        <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pytesseract-feedstock?branchName=master">
+      <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=7083&branchName=main">
+        <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pytesseract-feedstock?branchName=main">
       </a>
     </td>
   </tr>
