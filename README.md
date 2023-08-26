@@ -124,7 +124,7 @@ In order to produce a uniquely identifiable distribution:
 Feedstock Maintainers
 =====================
 
-* [@adbeda](https://github.com/adbeda/)
+* [@adbedada](https://github.com/adbedada/)
 * [@agcopenhaver](https://github.com/agcopenhaver/)
 * [@int3l](https://github.com/int3l/)
 * [@mxr-conda](https://github.com/mxr-conda/)
