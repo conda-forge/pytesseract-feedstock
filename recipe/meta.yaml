@@ -62,7 +62,6 @@ about:
 extra:
   recipe-maintainers:
     - mxr-conda
-    - adbeda
     - agcopenhaver
     - int3l
     - oblute
