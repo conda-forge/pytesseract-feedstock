@@ -13,7 +13,7 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv
   entry_points:
     - pytesseract = pytesseract.pytesseract:main
@@ -21,11 +21,11 @@ build:
 
 requirements:
   host:
-    - python >=3.7
+    - python {{ python_min }}
     - pip
 
   run:
-    - python >=3.7
+    - python >={{ python_min }}
     - pillow
     - packaging
 
@@ -36,6 +36,7 @@ test:
     - pep8-naming
     - flake8-quotes
     - pytest
+    - python {{ python_min }}
 
   imports:
     - PIL
